@@ -1,0 +1,113 @@
+@charset "UTF-8";
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*base*/
+
+body{
+   background: var(--preta);
+   font-family: 'arial', Times, serif;
+   color: white;
+}
+
+header .container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--vermelho);
+    src: url('fonts/GOTHAM-BOOK.ttf');
+    font: 'Gotham Book', Gotham-Book, sans-serif;
+    font-size: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+
+/*serie principal*/
+.serie-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../fotos/got-tela.jpg');
+
+    height: 550px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-principal .descricao {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+.serie-principal .titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.serie-principal .container{
+    width: 55%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
